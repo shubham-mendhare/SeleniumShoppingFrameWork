@@ -8,25 +8,25 @@ import smtech.base.Base;
 
 public class LoginPageTest extends Base {
 	
-	@Test
+	@Test(priority = 1)
 	public void PasswordFieldErrorValidationTest(){
 		String errPassword = loginpageobj.PasswordFieldErrorValidation();
 		Assert.assertEquals(errPassword, "*Password is required");
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void EmailFieldErrorValidationTest(){
 		String errUsername = loginpageobj.EmailFieldErrorValidation();
 		Assert.assertEquals(errUsername, "*Email is required");
 	}
 	
-	@Test
+	@Test (priority = 3)
 	public void InvalidLoginValidationTest(){
 		boolean IncorrectPassOrUsername = loginpageobj.InvalidLoginValidation();
 		Assert.assertTrue(IncorrectPassOrUsername);
 	}
 	
-	@Test
+	@Test (priority = 4)
 	public void LoginTest(){
 		
 		loginpageobj.Login(prop.getProperty("username"), prop.getProperty("password"));
