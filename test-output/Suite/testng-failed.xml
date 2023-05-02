@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="LoginModule(failed)">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="LoginModule(failed)">
     <classes>
       <class name="smtech.test.LoginPageTest">
         <methods>
+          <include name="PasswordFieldErrorValidationTest"/>
           <include name="InvalidLoginValidationTest"/>
+          <include name="LoginTest"/>
           <include name="LunchApp"/>
+          <include name="EmailFieldErrorValidationTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- smtech.test.LoginPageTest -->
