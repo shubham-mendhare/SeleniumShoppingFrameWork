@@ -18,11 +18,13 @@ public class Listeners extends Base implements ITestListener {
 
 	ExtentTest test;
 	ExtentReports extent = ExtentReporterNG.getRoprterObj();
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		//ITestListener.super.onTestStart(result);
 		test=extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);
 		
 	}
 
@@ -30,7 +32,7 @@ public class Listeners extends Base implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		//ITestListener.super.onTestSuccess(result);
-		test.log(Status.PASS, "Test Passed");
+		extentTest.get().log(Status.PASS, "Test Passed");
 	}
 
 	@Override
@@ -38,7 +40,7 @@ public class Listeners extends Base implements ITestListener {
 		// TODO Auto-generated method stub
 		//ITestListener.super.onTestFailure(result);
 	//	test.log(Status.FAIL, "Test Failed");
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
 		String filePath = null;
 		
 		try {
@@ -56,7 +58,7 @@ public class Listeners extends Base implements ITestListener {
 			e.printStackTrace();
 		}
 		
-		test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
 		
 	}
 
@@ -64,7 +66,7 @@ public class Listeners extends Base implements ITestListener {
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 	//	ITestListener.super.onTestSkipped(result);
-		test.log(Status.SKIP, "Test Skiped");
+		extentTest.get().log(Status.SKIP, "Test Skiped");
 	}
 
 	@Override
