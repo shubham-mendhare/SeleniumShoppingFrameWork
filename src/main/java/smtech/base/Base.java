@@ -2,12 +2,16 @@ package smtech.base;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -17,11 +21,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import shpping.PageObjects.LoginPageObj;
+import smtech.PageObjects.LoginPageObj;
 
 public class Base {
 	
-	 WebDriver driver;
+	 public WebDriver driver;
 	public Properties prop;
 	public LoginPageObj loginpageobj;
 	
@@ -50,6 +54,17 @@ public class Base {
 		
 		return driver;
 	
+	}
+	
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException
+	{
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+		FileUtils.copyFile(source, file);
+		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+		
+		
 	}
 	
 

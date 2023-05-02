@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-02T11:57:11 IST" name="Suite" finished-at="2023-05-02T11:57:43 IST" duration-ms="31401">
+  <suite started-at="2023-05-02T17:03:04 IST" name="Suite" finished-at="2023-05-02T17:03:33 IST" duration-ms="28722">
     <groups>
     </groups>
-    <test started-at="2023-05-02T11:57:11 IST" name="Login" finished-at="2023-05-02T11:57:43 IST" duration-ms="31401">
+    <test started-at="2023-05-02T17:03:04 IST" name="Login" finished-at="2023-05-02T17:03:33 IST" duration-ms="28722">
       <class name="smtech.test.LoginPageTest">
-        <test-method is-config="true" signature="LunchApp()[pri:0, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:11 IST" name="LunchApp" finished-at="2023-05-02T11:57:21 IST" duration-ms="9538" status="PASS">
+        <test-method is-config="true" signature="LunchApp()[pri:0, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:04 IST" name="LunchApp" finished-at="2023-05-02T17:03:11 IST" duration-ms="7437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LunchApp -->
-        <test-method signature="PasswordFieldErrorValidationTest()[pri:1, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:21 IST" name="PasswordFieldErrorValidationTest" finished-at="2023-05-02T11:57:21 IST" duration-ms="357" status="PASS">
+        <test-method signature="PasswordFieldErrorValidationTest()[pri:1, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:11 IST" name="PasswordFieldErrorValidationTest" finished-at="2023-05-02T17:03:12 IST" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PasswordFieldErrorValidationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:21 IST" name="tearDown" finished-at="2023-05-02T11:57:22 IST" duration-ms="776" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:12 IST" name="tearDown" finished-at="2023-05-02T17:03:13 IST" duration-ms="814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LunchApp()[pri:0, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:22 IST" name="LunchApp" finished-at="2023-05-02T11:57:27 IST" duration-ms="5575" status="PASS">
+        <test-method is-config="true" signature="LunchApp()[pri:0, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:13 IST" name="LunchApp" finished-at="2023-05-02T17:03:18 IST" duration-ms="5080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LunchApp -->
-        <test-method signature="EmailFieldErrorValidationTest()[pri:2, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:27 IST" name="EmailFieldErrorValidationTest" finished-at="2023-05-02T11:57:28 IST" duration-ms="425" status="PASS">
+        <test-method signature="EmailFieldErrorValidationTest()[pri:2, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:18 IST" name="EmailFieldErrorValidationTest" finished-at="2023-05-02T17:03:18 IST" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmailFieldErrorValidationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:28 IST" name="tearDown" finished-at="2023-05-02T11:57:29 IST" duration-ms="722" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:18 IST" name="tearDown" finished-at="2023-05-02T17:03:19 IST" duration-ms="792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LunchApp()[pri:0, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:29 IST" name="LunchApp" finished-at="2023-05-02T11:57:34 IST" duration-ms="5252" status="PASS">
+        <test-method is-config="true" signature="LunchApp()[pri:0, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:19 IST" name="LunchApp" finished-at="2023-05-02T17:03:24 IST" duration-ms="5544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LunchApp -->
-        <test-method signature="InvalidLoginValidationTest()[pri:3, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:34 IST" name="InvalidLoginValidationTest" finished-at="2023-05-02T11:57:34 IST" duration-ms="638" status="PASS">
+        <test-method signature="InvalidLoginValidationTest()[pri:3, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:24 IST" name="InvalidLoginValidationTest" finished-at="2023-05-02T17:03:25 IST" duration-ms="831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidLoginValidationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:34 IST" name="tearDown" finished-at="2023-05-02T11:57:35 IST" duration-ms="759" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:25 IST" name="tearDown" finished-at="2023-05-02T17:03:26 IST" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LunchApp()[pri:0, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:35 IST" name="LunchApp" finished-at="2023-05-02T11:57:41 IST" duration-ms="5923" status="PASS">
+        <test-method is-config="true" signature="LunchApp()[pri:0, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:26 IST" name="LunchApp" finished-at="2023-05-02T17:03:31 IST" duration-ms="5163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LunchApp -->
-        <test-method signature="LoginTest()[pri:4, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:41 IST" name="LoginTest" finished-at="2023-05-02T11:57:42 IST" duration-ms="574" status="PASS">
+        <test-method signature="LoginTest()[pri:4, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:31 IST" name="LoginTest" finished-at="2023-05-02T17:03:32 IST" duration-ms="588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smtech.test.LoginPageTest@6fd83fc1]" started-at="2023-05-02T11:57:42 IST" name="tearDown" finished-at="2023-05-02T11:57:43 IST" duration-ms="813" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smtech.test.LoginPageTest@5b67bb7e]" started-at="2023-05-02T17:03:32 IST" name="tearDown" finished-at="2023-05-02T17:03:33 IST" duration-ms="795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
