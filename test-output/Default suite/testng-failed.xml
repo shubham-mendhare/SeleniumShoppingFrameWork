@@ -5,7 +5,7 @@
     <classes>
       <class name="smtech.test.LoginPageTest">
         <methods>
-          <include name="PasswordFieldErrorValidationTest"/>
+          <include name="InvalidLoginValidationTest"/>
           <include name="LunchApp"/>
           <include name="tearDown"/>
         </methods>

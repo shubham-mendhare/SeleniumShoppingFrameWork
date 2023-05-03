@@ -1,6 +1,7 @@
 package smtech.PageObjects;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -67,8 +68,8 @@ public class LoginPageObj extends Utility
 		username.sendKeys("asdas@dfsafasd.com");
 		password.sendKeys("asdsaadsad");
 		loginBtn.click();
-		
-		return IncorrectPassOrUsername.isDisplayed();
+		return FindEleVisibilityOf(IncorrectPassOrUsername, Duration.ofSeconds(3000)).isDisplayed();
+		// IncorrectPassOrUsername.isDisplayed();
 	}
 	
 	public void Login(String usrname, String passwd) {
